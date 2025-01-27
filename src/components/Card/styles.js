@@ -6,8 +6,8 @@ export const CardWrapper = styled.div`
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  /* background: linear-gradient(135deg, #6b8afd, #4a68b8); */
   padding: 16px;
+
 `;
 
 
@@ -15,13 +15,12 @@ export const CardWrapper = styled.div`
 export const CardContent = styled.div`
   background: white;
   border-radius: 12px;
-  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); */
   padding: 24px;
   min-width: 40vw;
   max-width: 637px;
   width: 100%;
   text-align: center;
-  /* background-color:rgb(160, 30, 30); */
+  
 `;
 
 // Título do card
@@ -72,14 +71,6 @@ export const CardImagem = styled.div`
   img{
     width: 100%;
   }
-
-  /* &:hover {
-    background-color: #5a78d6;
-  }
-
-  &:active {
-    background-color: #4a68b8;
-  } */
 `;
 
 export const Cardfooter = styled.div`
@@ -97,4 +88,4 @@ export const Copyright = styled.p`
 
     font-size: 13px;
     color: hsl(0, 0%, 59%);
-`
+`;

@@ -4,13 +4,8 @@ export const InputWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  /* flex-direction: row; */
-  /* height: 400px; */
-  /* flex-wrap: wrap; */
-  /* flex: 1; */
   gap: 8px;
   max-width: 100%;
-  /* background-color:rgb(221, 37, 37); */
   margin-top: 2rem;
   overflow: hidden;
   object-fit: cover;
@@ -27,7 +22,7 @@ export const InputWrapper = styled.div`
   }
   @media (max-width: 768px) {
     flex-direction: column;
-    /* align-items: stretch; */
+    
     .input-container{
       flex-direction: column;
     }
@@ -37,7 +32,7 @@ export const InputWrapper = styled.div`
 export const StyledInput = styled.input`
   flex: 1;
   width: 27rem;
-  /* max-width: 100%; */
+  
   padding: 10px;
   border: 2px solid ${({ isValid }) => (isValid ? "#ccc" : "hsl(354, 100%, 66%)")};
   border-radius: 2rem;
@@ -45,16 +40,20 @@ export const StyledInput = styled.input`
   outline: none;
   overflow: hidden;
   box-sizing: border-box;
-  /* background-color: coral; */
+  
 
   &:focus {
     border-color: ${({ isValid }) => (isValid ? "#6b8afd" : "hsl(354, 100%, 66%)")};
     box-shadow: ${({ isValid }) => (isValid ? "0 0 5px #6b8afd" : "0 0 5px hsl(354, 100%, 66%)")};
   }
   @media (max-width: 768px) {
-    /* background-color: lightgray; 
-    color: darkblue;  Altere a cor do texto */
     max-width: 100%;
+  }
+
+  @media (max-width: 500px){
+    width: 21.438rem;
+    padding: 19px ;
+    
   }
 
   @media (max-width: 425px){
@@ -63,8 +62,16 @@ export const StyledInput = styled.input`
     
   }
 
-  @media (max-width: 375px){
+  @media (max-width: 396px){
     width: 18.138rem;
+  }
+
+  @media (max-width: 376px){
+    width: 18.138rem;
+  }
+
+  @media (max-width: 320px){
+    width: 14.500rem;
   }
 `;
 
@@ -79,7 +86,7 @@ export const Button = styled.button`
   font-size: 16px;
   font-family: "Libre Franklin";
   cursor: pointer;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 10px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 
   &:hover {
     background-color:hsl(223, 90.50%, 71.20%);
@@ -90,8 +97,6 @@ export const Button = styled.button`
   }
 
   @media (max-width: 768px) {
-    /* background-color: lightgray; 
-    color: darkblue;  Altere a cor do texto */
     width: 100%;
   }
 
@@ -101,9 +106,32 @@ export const Button = styled.button`
     
   }
 
-  @media (max-width: 375px){
+  @media (max-width: 396px){
     width: 18.138rem;
   }
+
+  @media (max-width: 376px){
+    width: 18.138rem;
+  }
+
+  @media (max-width: 320px){
+    width: 14.500rem;
+  }
+`;
+
+export const ErrorMessageMobile = styled.span`
+  color: hsl(354, 100%, 66%);
+  font-family: "Libre Franklin";
+  font-size: 14px;
+  font-weight: bold;
+  display: none;
+
+  @media (max-width: 769px) {
+    display: block;
+    margin-top: 5px;
+  }
+
+
 `;
 
 export const ErrorMessage = styled.span`
@@ -111,6 +139,15 @@ export const ErrorMessage = styled.span`
   font-family: "Libre Franklin";
   font-size: 14px;
   font-weight: bold;
+  text-align: left;
+  
+
+  margin-left: -200px;
+  
+  @media (max-width: 769px) {
+    display: none;
+    margin-top: 5px;
+  } 
 `;
 
 

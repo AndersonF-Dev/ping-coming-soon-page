@@ -1,7 +1,7 @@
 import React from "react";
 import { CardWrapper, CardContent, CardTitle, CardInformacao, CardImagem, CardSubTitle, Cardfooter, Copyright } from "./styles";
 import Input from "../Input/Input";
-import logo from '../../illustration-dashboard.png';
+import logo from '../../img/illustration-dashboard.png';
 import SocialIcons from "../FontAwesomeIcon/SocialIcons";
 
 

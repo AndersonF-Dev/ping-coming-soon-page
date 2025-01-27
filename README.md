@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# Frontend Mentor - Ping coming soon page solution
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Esta é uma solução para o [Ping coming soon page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da). Os desafios do Frontend Mentor ajudam você a melhorar suas habilidades de codificação construindo projetos realistas.
+### Screenshot
 
-## Available Scripts
+![](./src/img/Animação3.gif)
+![](./src/img/Animação4.gif)
 
-In the project directory, you can run:
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Link
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- URL do site ativo: [link aqui](https://andersonf-dev.github.io/ping-coming-soon-page/)
 
-### `yarn test`
+# Trecho de código usado js
+```js
+ return (<>
+    <InputWrapper>
+      <div className="input-container">
+        <StyledInput
+          type="email"
+          value={email}
+          onChange={handleChange}
+          isValid={isValid}
+          placeholder="Your email address..."
+        />
+      {!isValid && <ErrorMessageMobile>Please provide a valid email address</ErrorMessageMobile>}
+        <Button onClick={handleSubmit}>Notify Me</Button>
+      </div>
+    </InputWrapper>
+      {!isValid && <ErrorMessage>Please provide a valid email address</ErrorMessage>}
+    </>
+  );
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+### Criado com
+- Marcação HTML5 semântica
+- Propriedades personalizadas CSS
+- Flexbox
+- React
+- styled-components
+- JavaScript
 
-### `yarn build`
+### O que aprendi
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Aprendi a criar um card, posicionar elementos na tela, centralizar, criar e estilizar projetos em React.
+- O tilezei o styled-components para fazer a estilização do projeto. 
+- Criar uma validação para o input.
+- Exibir uma mensagem de erro quando o usuário coloca um Email invalido
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Desenvolvimento contínuo
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Este é apenas mais um de muitos dos projetos de front end que fiz alem de CSS, HTML, JavaScript agora tambêm estou me desenvolvendo em React. Continuarei fazendo e me desenvolvendo ainda mais. Estou aprendendo cada dia mais, fazendo esses desafios, 

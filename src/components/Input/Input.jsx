@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { InputWrapper, StyledInput, ErrorMessage, Button } from "./styles";
+import { InputWrapper, StyledInput, ErrorMessage, ErrorMessageMobile, Button } from "./styles";
 
 const Input = () => {
   const [email, setEmail] = useState("");
@@ -32,10 +32,11 @@ const Input = () => {
           isValid={isValid}
           placeholder="Your email address..."
         />
-      {!isValid && <ErrorMessage>Please provide a valid email address</ErrorMessage>}
+      {!isValid && <ErrorMessageMobile>Please provide a valid email address</ErrorMessageMobile>}
         <Button onClick={handleSubmit}>Notify Me</Button>
       </div>
     </InputWrapper>
+      {!isValid && <ErrorMessage>Please provide a valid email address</ErrorMessage>}
     </>
   );
 };
